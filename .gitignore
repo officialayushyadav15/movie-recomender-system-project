@@ -1,0 +1,10 @@
+notes.txt
+venv/
+.env
+__pycache__/
+app.py
+movie_dict.pkl
+procfile
+setup.sh
+similarity.pkl
+requirements.txt
