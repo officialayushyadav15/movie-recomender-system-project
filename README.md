@@ -241,9 +241,10 @@ if not os.path.exists("similarity.pkl"):
 
 
 
+
 ## 📋 Requirements File (`requirements.txt`)
 
-Includes:
+This project requires the following Python packages:
 
 ```
 streamlit
@@ -253,6 +254,14 @@ requests
 gdown
 numpy
 ```
+
+Make sure to install all dependencies by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 
 ---
 
