@@ -1,7 +1,3 @@
-Here’s a **detailed and professional `README.md`** for your **Movie Recommender System** GitHub repository, incorporating *every detail and link* you mentioned, organized clearly and professionally:
-
----
-
 # 🎬 Movie Recommender System 🍿
 
 ## 🔍 Project Overview
@@ -222,6 +218,4 @@ See the [LICENSE](LICENSE) file for details.
 * GitHub: [officialayushyadav15](https://github.com/officialayushyadav15)
 * Project Issues: [Open here](https://github.com/officialayushyadav15/movie_recomender_system_project/issues)
 
----
 
-Let me know if you'd like a `LICENSE`, `.gitignore`, or screenshot templates added too!
