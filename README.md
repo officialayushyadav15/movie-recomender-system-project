@@ -309,6 +309,6 @@ Feel free to open issues or submit pull requests. Any improvements or gesture ad
 ---
 
 
-### 🚀 Happy Coding and Gesture-Controlling! 👋
+###🎬 Happy Movie Discovering and Enjoy Your Recommendations! 🍿
 
 
