@@ -17,7 +17,7 @@ This project follows the pipeline:
 1. **Data Ingestion**: Load data from TMDB & IMDb datasets.
 2. **Preprocessing**: Clean, merge, and enrich metadata.
 3. **Feature Engineering**: Combine genres, keywords, cast, crew into a “tags” column.
-4. **Similarity Calculation**: Use TF-IDF and cosine similarity to compute closeness between movies.
+4. **Similarity Calculation**: Use bag of words and cosine similarity to compute closeness between movies.
 5. **Model Saving**: Save computed similarity matrix as `similarity.pkl`.
 6. **Web Deployment**: Build a Streamlit app for real-time recommendations.
 
