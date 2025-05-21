@@ -267,14 +267,15 @@ pip install -r requirements.txt
 
 ## 📸 Output Screenshots
 
-> Add some screenshots of:
->
-> * Homepage
-> * Recommendations for a movie
-> * API key error handling
-> * Deployed version
+Here are some screenshots showcasing the application in action:
 
-*(Upload these to `/screenshots` folder and link them here if available.)*
+| Screenshot                              | Description                                                                                       |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| ![Homepage](./opening.png)              | **Homepage** — The main interface where you can search for movies.                                |
+| ![Search Recommendations](./search.png) | **Get Recommendations** — After entering a movie, this shows the button click to get suggestions. |
+| ![Results](./result.png)                | **Recommendations** — Display of recommended movies based on your input.                          |
+
+
 
 ---
 
