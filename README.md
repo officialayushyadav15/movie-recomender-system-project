@@ -281,7 +281,11 @@ Here are some screenshots showcasing the application in action:
 
 ## 🎥 Demo Video
 
-> *(Optional: Upload a YouTube demo video and link it here)*
+
+
+https://github.com/user-attachments/assets/50d70b24-c934-4a30-85a3-607892afee8d
+
+
 
 ---
 
