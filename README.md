@@ -284,23 +284,26 @@ pip install -r requirements.txt
 
 ---
 
-## 🛠 Contributing
+## 🙋‍♂️ About Me
 
-Feel free to fork this repo and submit pull requests.
-Suggestions, improvements, and bug reports are welcome!
+I'm Ayush Yadav, a passionate developer with an interest in computer vision, automation, and innovative tech solutions.  
+Always exploring new technologies and building things that matter.
+
+### Let’s connect:
+
+- 📧 **Email:** [officialayushyadav15@gmail.com](mailto:officialayushyadav15@gmail.com)
+- 💼 **GitHub:** [@officialayushyadav15](https://github.com/officialayushyadav15)
+- 🔗 **LinkedIn:** [Ayush Yadav](https://www.linkedin.com/in/ayush-yadav-408924230/)
 
 ---
 
-## 📄 License
+## 🤝 Contributions
 
-This project is licensed under the **MIT License**.
-See the [LICENSE](LICENSE) file for details.
+Feel free to open issues or submit pull requests. Any improvements or gesture additions are welcome!
 
 ---
 
-## 📧 **Contact & Support**
 
-* GitHub: [officialayushyadav15](https://github.com/officialayushyadav15)
-* Project Issues: [Open here](https://github.com/officialayushyadav15/movie_recomender_system_project/issues)
+### 🚀 Happy Coding and Gesture-Controlling! 👋
 
 
