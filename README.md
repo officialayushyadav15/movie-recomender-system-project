@@ -97,14 +97,34 @@ movie_recomender_system_project/
 
 ---
 
+
+
 ## 🚀 How to Run the Application
 
-1. Make sure the virtual environment is activated and dependencies installed.
-2. Download `similarity.pkl` from Google Drive at runtime.
+To run the **Movie Recommender System**, follow these steps:
 
-### 🔗 Use External Hosting for `similarity.pkl`
+### ✅ Step 1: Activate Virtual Environment
 
-Since `similarity.pkl` exceeds GitHub’s file size limit (100MB), it is stored externally.
+Make sure you have created and activated your virtual environment:
+
+```bash
+python -m venv venv
+venv\Scripts\activate  # For Windows
+```
+
+### ✅ Step 2: Install Project Dependencies
+
+Install all the necessary Python packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 📦 Step 3: Download `similarity.pkl` at Runtime
+
+> ⚠️ `similarity.pkl` is larger than 100MB and cannot be stored on GitHub. It is hosted on **Google Drive** and downloaded dynamically.
+
+Add this snippet at the start of your `app.py` to ensure the file is downloaded if missing:
 
 ```python
 import gdown
@@ -115,7 +135,9 @@ if not os.path.exists("similarity.pkl"):
     gdown.download(url, "similarity.pkl", quiet=False)
 ```
 
-3. Run the Streamlit application:
+### ▶️ Step 4: Run the Application
+
+Once dependencies are installed and `similarity.pkl` is downloaded, run the application using Streamlit:
 
 ```bash
 streamlit run app.py
@@ -123,48 +145,101 @@ streamlit run app.py
 
 ---
 
-## 🔑 Steps to Get OMDb API Key
+## 🔐 How to Get Your OMDb API Key
 
-You’ll need an OMDb API key to fetch movie posters and details.
+This project uses the **OMDb API** to fetch movie posters and details. You’ll need a personal API key.
 
-👉 Go to [https://www.omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx)
+### 🔗 Get Your OMDb API Key Here:
 
-### Follow These Steps:
+👉 [https://www.omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx)
 
-1. Choose a plan: Free (for personal) or Paid (for commercial use)
-2. Fill in the form (email + usage type)
-3. Submit and check your email for your API key
-4. Test the key:
+### 📋 Steps to Obtain the API Key:
+
+1. Visit the link above.
+2. Choose a plan:
+
+   * **Free** (for personal use)
+   * **Paid** (for commercial/heavy use)
+3. Fill in the form with:
+
+   * Your **email address**
+   * **Usage type**
+4. Click **Submit**
+5. Check your inbox for the API key.
+
+### 🔍 Test Your Key
+
+You can test the key by replacing `YOUR_API_KEY` in the URL below:
 
 ```bash
 https://www.omdbapi.com/?t=Inception&apikey=YOUR_API_KEY
 ```
 
-Replace `YOUR_API_KEY` with your actual key in `app.py`.
+> 🎯 Be sure to replace `YOUR_API_KEY` in `app.py` with your actual key.
 
 ---
 
-## ✅ Deploying on Render
+## ☁️ Deploying the App on Render
+
+You can host your Streamlit app for free using [Render](https://render.com). Here's how:
+
+### 🌐 Step-by-Step Deployment Guide:
 
 1. Go to 👉 [https://render.com](https://render.com)
-2. Sign in with GitHub
-3. Click on **New Web Service**
-4. Connect your GitHub repository
-5. Set the **Build Command**:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-6. Set the **Start Command**:
+2. Sign in using your GitHub account.
 
-   ```bash
-   streamlit run app.py
-   ```
-7. Choose the **Free Plan**
-8. Done! Your app will be live like this:
-   👉 [Live Demo](https://movie-recomender-system-nxga.onrender.com)
+3. Click on **New Web Service**.
+
+4. Connect your GitHub repository.
+
+5. Configure the following:
+
+   * **Build Command**:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+   * **Start Command**:
+
+     ```bash
+     streamlit run app.py
+     ```
+
+6. Choose the **Free Plan**.
+
+7. Wait for the build to finish. Your live website will be available at:
+
+   🔗 **Live Demo**: [https://movie-recomender-system-nxga.onrender.com](https://movie-recomender-system-nxga.onrender.com)
 
 ---
+
+## 📁 Hosting Large Files Externally
+
+### 🔄 Using Google Drive for `similarity.pkl`
+
+GitHub restricts file uploads to 100MB. To work around this:
+
+1. Upload `similarity.pkl` to **Google Drive**.
+2. Make the file public or accessible via link.
+3. Get the file ID from the shared link.
+4. Use the following code to download it at runtime:
+
+```python
+import gdown
+import os
+
+if not os.path.exists("similarity.pkl"):
+    url = "https://drive.google.com/uc?id=1htdP0IFthOGfDTmhfVtY7nN3uFk_xtqx"
+    gdown.download(url, "similarity.pkl", quiet=False)
+```
+
+> ✅ You can also use other services like **Dropbox**, **AWS S3**, or **Streamlit file uploader** for temporary hosting.
+
+---
+
+
 
 ## 📋 Requirements File (`requirements.txt`)
 
